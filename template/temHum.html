@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>智能家居系统</title>
+    <link href="../lib/weui.min.css" rel="stylesheet" />    
+    <link href="../lib/jquery-weui.min.css" rel="stylesheet" />
+    <link href="../lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />    
+    <link href="../css/temHum.css" rel="stylesheet" />
+    <script src="../lib/jquery-3.2.1.min.js" ></script>
+    <script src="../lib/jquery-weui.min.js" ></script>
+    <script src="../lib/swiper.min.js"></script>
+    <script src="../lib/fastclick.js"></script>
+    <script src="../lib/highcharts.js"></script>
+    <script src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog-sync.js"></script>    
+</head>
+<body ontouchstart>
+<header class='headBar'>
+<span class="headTitle">室内温湿度</span>
+<span class="glyphicon glyphicon-chevron-left" onclick="history.back()"></span>
+<span class="glyphicon glyphicon-menu-hamburger open-popup" data-target="#temHum-setting"></span>            
+</header>
+<div id="temChart"></div>
+<div id="humChart"></div>
+<div id="temHum-setting" class="weui-popup__container popup-bottom">
+<div class="weui-popup__overlay"></div>
+<div class="weui-popup__modal">
+<div class="modal-title">
+<p class="title">温湿度控制<span class="save-setting close-popup">保存</span></p>
+</div>
+<div>
+<div class="weui-cells weui-cells_radio">
+<label class="weui-cell weui-check__label" for="temHum-open">                   
+<div class="weui-cell__bd">
+<p>开启</p>
+</div>
+<div class="weui-cell__ft">
+<input type="radio" name="temHum" class="weui-check" id="temHum-open"  value="1">
+<span class="weui-icon-checked"></span>
+</div>
+</label>
+<div class="temHum-slider" style="display:none">
+<div class="weui-slider-box" id="slider1">
+<div class="weui-slider">
+<div id="sliderInner1" class="weui-slider__inner">
+  <div id="sliderTrack1"  class="weui-slider__track"></div>
+  <div id="sliderHandler1"  class="weui-slider__handler"></div>
+</div>
+</div>
+<div id="sliderValue1" class="weui-slider-box__value"></div>
+</div>
+<div class="weui-slider-box" id="slider2">
+<div class="weui-slider">
+<div id="sliderInner2" class="weui-slider__inner">
+  <div id="sliderTrack2"  class="weui-slider__track"></div>
+  <div id="sliderHandler2"  class="weui-slider__handler"></div>
+</div>
+</div>
+<div id="sliderValue2" class="weui-slider-box__value"></div>
+</div>
+</div>
+<label class="weui-cell weui-check__label" for="temHum-close">
+<div class="weui-cell__bd">
+<p>不开启</p>
+</div>
+<div class="weui-cell__ft">
+<input type="radio" class="weui-check" name="temHum" id="temHum-close" value="0">
+<span class="weui-icon-checked"></span>
+</div>
+</label>
+</div>
+</div>
+</div>
+</div>
+      <script>
+                  $(function() {
+                      FastClick.attach(document.body);
+                  });
+      </script>
+      <script src="../js/temHum.js" ></script>      
+</body>
+</html>

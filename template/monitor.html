@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>智能家居系统</title>
+    <link href="../lib/weui.min.css" rel="stylesheet" />    
+    <link href="../lib/jquery-weui.min.css" rel="stylesheet" />
+    <link href="../lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />    
+    <link href="../css/monitor.css" rel="stylesheet" />
+    <script src="../lib/jquery-3.2.1.min.js" ></script>
+    <script src="../lib/jquery-weui.min.js" ></script>
+    <script src="../lib/fastclick.js"></script>
+    <script src="https://cdn.wilddog.com/sdk/js/2.4.5/wilddog-video-call.js"></script> 
+    <script src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog-auth.js"></script>   
+    <!-- <script src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog-sync.js"></script> -->
+</head>
+<body ontouchstart>
+        <header class='headBar'>
+                <span class="headTitle">实时监控</span>
+                <span class="glyphicon glyphicon-chevron-left" onclick="history.back()"></span>
+          </header>
+          <video id="monitor">
+
+          </video>
+          <script>
+                $(function() {
+                    FastClick.attach(document.body);
+                });
+              </script>
+      <script src="../js/monitor.js" ></script>      
+</body>
+</html>

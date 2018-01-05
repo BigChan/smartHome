@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>智能家居系统</title>
+    <link rel="shortcut icon" href="../images/smartHome.ico" type="image/x-icon" />
+    <link rel="Bookmark" href="../images/smartHome.ico" type="image/x-icon" />
+    <link rel="icon" sizes="72x72" href="../images/smartHome.png" />
+    <link href="../lib/weui.min.css" rel="stylesheet" />    
+    <link href="../lib/jquery-weui.min.css" rel="stylesheet" />
+    <link href="../lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />    
+    <link href="../css/index.css" rel="stylesheet" />
+    <script src="../lib/jquery-3.2.1.min.js" ></script>
+    <script src="../lib/jquery-weui.min.js" ></script>
+    <script src="../lib/fastclick.js"></script>
+    <script src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog-sync.js"></script>
+</head>
+<body ontouchstart>
+    <header class='demos-header'>
+        <h1 class="demos-title"><span class="glyphicon glyphicon-home"></span> 智能家居系统</h1>
+      </header>
+  
+      <div class="weui-grids">
+        <a href="temHum.html" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+              <span class="glyphicon glyphicon-asterisk"></span>
+          </div>
+          <p class="weui-grid__label">
+            温湿度
+          </p>
+        </a>
+        <a href="harmfulGas.html" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+                <span class="glyphicon glyphicon-fire" style="color:rgba(247, 160, 0, 0.72)"></span>
+          </div>
+          <p class="weui-grid__label">
+            有害气体
+          </p>
+        </a>
+        <a href="pm.html" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+                <span class="glyphicon glyphicon-globe" style="color:#8a6d3b"></span>
+          </div>
+          <p class="weui-grid__label">
+            PM2.5
+          </p>
+        </a>
+        <a href="" class="weui-grid js_grid light-control">
+          <div class="weui-grid__icon">
+                <span class="glyphicon glyphicon-lamp" style="color:#999"></span>
+          </div>
+          <p class="weui-grid__label">
+            灯光控制
+          </p>
+        </a>
+        <a href="" onclick="event.preventDefault()" class="weui-grid js_grid warn-control">
+          <div class="weui-grid__icon">
+                <span class="glyphicon glyphicon-alert" style="color:#e2e21e"></span>
+          </div>
+          <p class="weui-grid__label">
+            警报
+          </p>
+        </a>
+        <a href="monitor.html" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+                <span class="glyphicon glyphicon-facetime-video" style="color:#09bb07"></span>
+          </div>
+          <p class="weui-grid__label">
+            实时监控
+          </p>
+        </a>
+        
+      </div>
+      <div class="weui-footer weui-footer_fixed-bottom">
+        <p class="weui-footer__text">Copyright © 2017 SmartHome</p>
+      </div>
+      <script>
+          $(function() {
+              FastClick.attach(document.body);
+          });
+        </script>
+      <script src="../js/index.js" ></script>      
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>智能家居系统</title>
+    <link href="../lib/weui.min.css" rel="stylesheet" />    
+    <link href="../lib/jquery-weui.min.css" rel="stylesheet" />
+    <link href="../lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />    
+    <link href="../css/pm.css" rel="stylesheet" />
+    <script src="../lib/jquery-3.2.1.min.js" ></script>
+    <script src="../lib/jquery-weui.min.js" ></script>
+    <script src="../lib/fastclick.js"></script>
+    <script src="../lib/highcharts.js"></script>
+    <script src="../lib/data.js"></script>
+    <script src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog-sync.js"></script>    
+</head>
+<body ontouchstart>
+        <header class='headBar'>
+                <span class="headTitle">室内PM2.5</span>
+                <span class="glyphicon glyphicon-chevron-left" onclick="history.back()"></span>
+                <span class="glyphicon glyphicon-menu-hamburger open-popup" data-target="#pm-setting"></span>                
+          </header>
+      <div id="pmChart"></div>
+      <div id="pm-setting" class="weui-popup__container popup-bottom">
+            <div class="weui-popup__overlay"></div>
+            <div class="weui-popup__modal">
+              <div class="modal-title">
+                <p class="title">PM2.5净化<span class="save-setting close-popup">保存</span></p>
+              </div>
+              <div>
+                  <div class="weui-cells weui-cells_radio">
+                      <label class="weui-cell weui-check__label" for="pm-open">
+                    
+                        <div class="weui-cell__bd">
+                          <p>开启</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                          <input type="radio" name="pm" class="weui-check" id="pm-open"  value="1">
+                          <span class="weui-icon-checked"></span>
+                        </div>
+                      </label>
+                      <label class="weui-cell weui-check__label" for="pm-close">
+                            <div class="weui-cell__bd">
+                              <p>不开启</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                              <input type="radio" class="weui-check" name="pm" id="pm-close" value="0">
+                              <span class="weui-icon-checked"></span>
+                            </div>
+                          </label>
+                    </div>
+              </div>
+            </div>
+      </div>
+      <script>
+            $(function() {
+                FastClick.attach(document.body);
+            });
+          </script>
+      <script src="../js/pm.js" ></script>      
+</body>
+</html>

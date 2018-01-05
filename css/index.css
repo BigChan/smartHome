@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .demos-title {
+    text-align: center;
+    font-size: 30px;
+    color: #3cc51f;
+    font-weight: 400;
+    margin: 0 15%;
+  }
+  
+  .demos-sub-title {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .demos-header {
+    padding: 50px 0 60px;
+  }
+  
+  .demos-content-padded {
+    padding: 15px;
+  }
+  
+  .demos-second-title {
+    text-align: center;
+    font-size: 24px;
+    color: #3cc51f;
+    font-weight: 400;
+    margin: 0 15%;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+  }
+  
+  footer a {
+    color: #999;
+    text-decoration: none;
+  }
+  .weui-grid{width: 50%}
+  .weui-grids .glyphicon{
+     font-size: 28px;
+  }
+  .weui-grids:after{border-left: none}
+  .weui-grids:before{border-top: 1px solid #eee;}
+  .weui-grid:before{border-right: none}
+  .weui-grid:nth-of-type(2n){
+      border-left: solid 1px #eee;
+  }
+  .weui-grid:after{border-bottom: 1px solid #eee;}
+  .light-control.active{
+    background: rgb(49, 112, 143);
+    box-shadow: 0 0 20px #bdc71c;
+  }
+  .light-control.active .glyphicon-lamp,.light-control.active .weui-grid__label{
+    color: #bdc71c !important;
+  }
+  .warn-control.active{
+    background: #e2e21e;
+    box-shadow: 0 0 20px #e21e1e;
+  }
+  .weui-dialog__bd{
+    padding: 0px 1em 1em;
+    line-height: 1.7;
+  }
+  .warn-control.active .glyphicon-alert,.warn-control.active .weui-grid__label{
+    color: #e21e1e !important;
+  }
+  .weui-dialog .weui-dialog__title,.weui-dialog .gas_tip{
+    color: #e21e1e;
+  }

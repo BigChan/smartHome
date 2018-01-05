@@ -1,0 +1,11 @@
+
+.weui-slider-box{
+    width:95%;
+    margin: 30px 0;
+  }
+#sliderValue1:after{
+    content:'℃'
+}
+#sliderValue2:after{
+    content:'%'
+}
